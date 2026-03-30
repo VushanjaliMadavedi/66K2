@@ -1,0 +1,123 @@
+MAVEN NOTES
+1. Problems Without Build Tools
+
+Without build tools, developers face:
+
+ Manual compilation of code
+ Managing dependencies is difficult
+ No standard project structure
+ Time-consuming build process
+ Hard to maintain large projects
+ Error-prone (missing libraries, wrong versions)
+
+2. What are Build Tools & Advantages
+Build Tools
+
+Build tools automate the process of:
+
+Compiling code
+Managing dependencies
+Running tests
+Packaging applications
+
+Advantages
+ Automation of tasks
+ Dependency management
+ Consistent builds
+ Saves time & effort
+
+Examples of Build Tools:
+Apache Maven
+Gradle
+Ant
+Make
+
+3. What is Maven
+Maven is a build automation tool used mainly for Java projects.
+It follows a standard project structure
+Uses POM.xml to manage dependencies and build configuration
+
+4. Install Maven (Ubuntu)
+  sudo apt update
+  sudo apt install maven
+  mvn -version
+
+Build Requirements for Maven
+Java JDK (must be installed)
+JAVA_HOME environment variable set
+Internet connection (for dependencies)
+
+5. Repositories in Maven
+1. Local Repository
+Stored on your system
+Path: ~/.m2/repository
+Stores downloaded dependencies
+2. Central Repository (Global)
+Online repository maintained by Maven
+URL: https://repo.maven.apache.org/maven2/
+3. Remote Repository
+Organization-specific repositories
+Used for internal libraries
+
+6. What is POM.xml
+POM (Project Object Model)
+Core file in Maven project
+Written in XML
+Contains project configuration
+Key Elements
+ Dependencies
+External libraries required
+
+<dependencies>
+  <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+  </dependency>
+</dependencies>
+
+ Plugins
+Used to perform tasks (compile, test, package)
+ Surefire Plugin
+Runs unit tests
+Automatically executes test cases during build
+
+7. Maven Lifecycle
+3 Main Lifecycles
+1. Default Lifecycle
+validate
+compile
+test
+package
+install
+deploy
+2. Clean Lifecycle
+clean → deletes previous build files
+3. Site Lifecycle
+site → generates project documentation
+
+8. Create Maven Project (Archetype)
+Step 1: Run command
+mvn archetype:generate
+
+Step 2: Provide details
+groupId → com.example
+artifactId → my-app
+version → 1.0-SNAPSHOT
+package → com.example
+
+Step 3: Navigate to project
+cd my-app
+
+9. Run Maven Commands
+   Compile project
+     mvn compile
+   Run tests
+     mvn test
+   Package project (creates JAR)
+     mvn package
+   Install to local repo
+     mvn install
+   Clean project
+     mvn clean
+
