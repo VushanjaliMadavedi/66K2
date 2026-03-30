@@ -8,6 +8,7 @@ Types of VCS
 Stores versions on a local machine.
 No collaboration support.
 Example: RCS
+
 2. Centralized Version Control System (CVCS)
 Single central server stores all versions.
 Developers pull and push from this server.
@@ -65,3 +66,5 @@ Steps:
 
    git config --global user.name "Your Name"
    git config --global user.email "your@email.com"My Git Notes
+^X
+
