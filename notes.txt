@@ -1,0 +1,67 @@
+1. What is VCS and its Types
+Version Control System (VCS)
+
+A Version Control System is a tool that helps track changes in files over time. It allows multiple developers to work on a project efficiently and keeps a history of modifications.
+
+Types of VCS
+1. Local Version Control System
+Stores versions on a local machine.
+No collaboration support.
+Example: RCS
+2. Centralized Version Control System (CVCS)
+Single central server stores all versions.
+Developers pull and push from this server.
+Requires internet.
+Example: SVN (Subversion)
+3. Distributed Version Control System (DVCS)
+Each developer has a complete copy of the repository.
+Works offline.
+Faster and more flexible.
+Example: Git
+
+2. What is Git and GitHub
+Git
+Git is a distributed version control system.
+It tracks changes in code.
+Allows multiple developers to work together.
+Works offline and is very fast.
+GitHub
+GitHub is a cloud-based platform that hosts Git repositories.
+Used for collaboration, sharing, and managing projects.
+Provides features like pull requests, issues, and actions.
+
+3. Git 3-Tree Architecture
+
+Git works with three main areas:
+
+1. Working Directory
+Where you write and edit your code.
+Files are in a normal editable state.
+2. Staging Area (Index)
+Temporary area where changes are prepared before commit.
+Use git add to move files here.
+3. Repository (Local Repo)
+Stores committed changes permanently.
+Use git commit to save changes.
+
+4. How to Create GitHub Account
+
+Steps:
+
+1.Go to https://github.com
+2.Click Sign Up
+3.Enter:
+   Email
+   Password
+   Username
+4.Verify your account
+5.Choose free plan
+6.Account is ready
+
+5. Install Git (Ubuntu) & Push Local Project to GitHub
+   sudo apt update
+   sudo apt install git
+   git --version
+
+   git config --global user.name "Your Name"
+   git config --global user.email "your@email.com"My Git Notes
